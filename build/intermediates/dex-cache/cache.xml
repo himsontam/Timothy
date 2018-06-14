@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Himson/Desktop/Capstone/TimothyV4/platforms/android/app/build/intermediates/transforms/desugar/release/0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.2"
+        sha1="ce771dd9ca38456169566b60db9d88ad1617b4b6">
+        <dex dex="/Users/Himson/Desktop/Capstone/TimothyV4/platforms/android/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+
+</items>
