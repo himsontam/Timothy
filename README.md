@@ -38,22 +38,28 @@ Authentication provides backend services easy to use SDKs, and ready-made UI
 libraries to authenticate users to our mobile application. This project is using
 Firebase Authentication with email and password as a sign-up and sign- in
 method.
+
 ● Home Page: there are three functions.
 1. Announcements connect with Google Blogger RSS API for getting
 updated event and announcement
 2. Sign up event connect with google Sign Up Form
 3. Question connect to About Page with a Form for members to ask
 questions.
+
 ● Calendar Page: this project is using google calendar embedded as a website.
+
 ● Photo Page: it is using firebase as storage for storing the photo and using the
 photo id to display in our project mobile application.
+
 ● Media page: it is using firebase as backend and storage with providing a video
 ID, and display on Media Page in our mobile application.
+
 ● Prayer List Page: it is using firebase Realtime database for storing and showing
 the list in Prayer List Page. The Firebase Realtime Database is a cloud-hosted
 NoSQL database that lets user to store and sync between user in Realtime, and
 this database is using JSON object for the developer to manage in Realtime on
 Firebase Website.
+
 ● About Page: it is showing some information about our church. Also, it has a form
 for user to input their request and concern to our church email from the form in
 About Page.
