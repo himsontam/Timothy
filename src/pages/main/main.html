@@ -1,0 +1,51 @@
+<ion-header no-border>
+  <h4 class="title" ><ion-icon name="home" color="header-color"> Home</ion-icon></h4>
+  
+</ion-header>
+
+
+<ion-content style="background: url(assets/imgs/BackgroundPhoto.JPG) no-repeat center;
+                      background-size:cover;background-color:#000000;"id="page2">
+
+  <ion-slides autoplay="5000" loop="true" speed="500" style="width: 100%;height:auto;">
+    <ion-slide>
+      <img src = "assets/imgs/ECCTimothyCollages.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src = "assets/imgs/ECCTimothyLogo.jpeg" />
+    </ion-slide>
+  </ion-slides>
+
+  <ion-list class="list" style="opacity:0.8;padding: 0px !important;">
+    <ion-item color="dark"> 
+      <ion-thumbnail item-start>
+        <ion-icon name="megaphone" color="homePageAnnouncementIcon-color"></ion-icon>
+      </ion-thumbnail>
+      <h2>Announcements</h2>
+      <p><font size="1">Event News, Reminders, Ride Lists</font></p>
+      <button ion-button clear item-end (click)="openAnnouncementDetailsPage()">Details</button>
+    </ion-item>
+
+    <ion-item color="dark"> 
+      <ion-thumbnail item-start>
+        <ion-icon ios="ios-document" md="md-document" color="homePageDocIcon-color"></ion-icon>
+      </ion-thumbnail>
+      <h2>Sign Up Form</h2>
+      <p><font size="1">Please sign up here!</font></p>
+      <button ion-button clear item-end (click)="openGoogleFormInBrowser(url)">Sign Up</button>
+    </ion-item>
+  
+    <ion-item color="dark"> 
+      <ion-thumbnail item-start>
+        <ion-icon name="help-circle" color="homePageQuestionIcon-color"></ion-icon>
+      </ion-thumbnail>
+      <h2>Questions</h2>
+      <p><font size="1">Any Questions? Please ask!</font></p>
+      <button ion-button clear item-end (click)="openAboutPage()">Ask Here</button>
+    </ion-item>
+  </ion-list>
+
+  <!-- <button ion-button round small color="danger" (click)="signOut()">sign out<ion-icon name="log-out"></ion-icon></button> -->
+
+
+</ion-content>

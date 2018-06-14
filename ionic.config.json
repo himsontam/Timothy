@@ -1,0 +1,8 @@
+{
+  "name": "TimothyV4",
+  "app_id": "339562a0",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

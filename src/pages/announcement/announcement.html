@@ -1,0 +1,22 @@
+
+<ion-header>
+  <ion-navbar color="anouncement-header-color">
+    <ion-title style="padding: 0;">
+      <ion-icon name="megaphone" color="header-color">
+        Announcement
+      </ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+  <ion-content style="background: url(assets/imgs/BackgroundPhoto.JPG) no-repeat center;
+  background-size:cover;background-color:#000000;"id="page3">
+  <ion-list class="list" color="dark" style="opacity:0.5;padding: 0px !important;">
+      <button ion-item *ngFor="let post of posts" (click)="openPost(post)" color="dark">
+        <b>
+          <h2 [innerHTML]="post.title"></h2>
+          <p [innerHTML]="post.author.displayName"></p>
+        </b>
+      </button>
+  </ion-list>
+</ion-content>

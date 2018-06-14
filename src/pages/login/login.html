@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="anouncement-header-color">
+    <ion-title style="padding: 0;">
+      <ion-icon name="log-in" color="header-color">
+        Login
+      </ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: url(assets/imgs/BackgroundPhoto.JPG) no-repeat center;
+                      background-size:cover;background-color:#000000;">
+  
+  <ion-list class="list" color="dark" style="opacity:0.5;padding: 0px !important;">
+
+    <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+      <ion-label floating>Email</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+
+    <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <div padding>
+    <button block ion-button (click)="signInUser()" item-left>Sign In</button>
+  </div>
+
+</ion-content>

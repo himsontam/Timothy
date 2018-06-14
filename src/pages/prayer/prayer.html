@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="anouncement-header-color">
+    <ion-title style="padding: 0;">
+      <ion-icon name="list-box" color="header-color">
+        Prayer Request
+      </ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content style="background: url(assets/imgs/BackgroundPhoto.JPG) no-repeat center;
+  background-size:cover;background-color:#000000;"id="page3">
+<ion-list>
+      <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+        <ion-label floating>Name :</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="model.title"></ion-input>
+      </ion-item>            
+      <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+        <ion-label floating>Request :</ion-label>
+        <ion-textarea   type="text" row="10" [(ngModel)]="model.text"></ion-textarea>
+      </ion-item>
+      <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+          <button block clear type="button" (click)="addMessage()" ion-button >Submit</button>
+      </ion-item>
+</ion-list>
+ 
+  <ion-card color="dark" style="opacity:1;padding: 0px !important;">
+    <ion-card-header>
+      <h2><b>Swipe left to delete or edit</b></h2>
+    </ion-card-header>
+  </ion-card>
+  <ion-list>
+    <ion-item-sliding color="dark" style="opacity:0.8;padding: 0px !important;" *ngFor="let message of messages">
+      <ion-item color="dark" style="opacity:0.8;padding: 0px !important;">
+        <h3>Name: {{message.title}}</h3>
+        <p>Request: {{message.text}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteMessage(message.$key)">
+        <ion-icon name="ios-trash"></ion-icon>
+        delete
+      </button>
+      <button ion-button color="success" (click)="updateMessage(message)">
+          <ion-icon name="ios-create"></ion-icon>
+          edit
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+ 
+</ion-content>
